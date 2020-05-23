@@ -1,0 +1,55 @@
+{
+  "editor.fontSize": 18,
+  "files.autoSave": "afterDelay",
+  "editor.wordWrap": "on",
+  "window.zoomLevel": -2,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.colorTheme": "Material Theme Palenight High Contrast",
+  "editor.formatOnSave": true,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "terminal.external.windowsExec": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "liveServer.settings.port": 4500,
+  "explorer.confirmDelete": false,
+  "gitlens.views.repositories.branches.layout": "list",
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "prettier.disableLanguages": ["js"],
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html"
+  },
+  "eslint.options": {
+    "extentions": [".js", ".jsx", ".vue"]
+  },
+  "eslint.validate": ["javascriptreact", "javascript", "vue"],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "/src/css"
+    }
+  ],
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+  "liveSassCompile.settings.showOutputWindow": false
+}
