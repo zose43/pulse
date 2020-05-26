@@ -1,0 +1,134 @@
+@import "_mixin";
+@import "_values";
+@import "_media";
+
+* {
+  font-family: "MuseoSansCyrl", sans-serif;
+}
+
+/* Promo */
+
+.promo {
+  min-height: 650px;
+  padding: 21px 0 93px 0;
+  background: url(../img/promo_bg.jpg) center (center/cover) no-repeat;
+  &-consult {
+    display: flex;
+    justify-content: flex-end;
+    button {
+      margin-top: 68px;
+      width: 300px;
+      height: 50px;
+      background-color: $red;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $white;
+      border: none;
+      outline: none;
+    }
+  }
+  &-catalog {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $white;
+    span {
+      text-decoration: underline;
+    }
+  }
+  &-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 66px;
+    &-item {
+      margin-right: 70px;
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      &-text {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 500;
+        color: $white;
+      }
+    }
+  }
+  &-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 91px;
+    align-items: center;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+  }
+  &-subheader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 17px;
+    line-height: 1;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $white;
+  }
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-text {
+      font-family: MuseoSansCyrl;
+      font-size: 12px;
+      font-weight: 500;
+      color: $white;
+      text-align: center;
+      span {
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: 700;
+        color: $white;
+      }
+    }
+    &-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      a {
+        font-size: 18px;
+        font-weight: 700;
+        color: $white;
+      }
+      button {
+        margin-top: 8px;
+        width: 150px;
+        height: 30px;
+        background-color: $red;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $white;
+      }
+    }
+    &-link {
+      width: 250px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
