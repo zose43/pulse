@@ -1,0 +1,150 @@
+@media (max-width: 1200px) {
+  .advantage {
+    &-icons {
+      &-item {
+        margin-right: 85px;
+        &:nth-child(1) {
+          width: 80%;
+        }
+        &-descr {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .promo {
+    &-nav {
+      a {
+        img {
+          width: 92%;
+        }
+      }
+      &-text {
+        font-size: 11px;
+        span {
+          font-size: 17px;
+        }
+      }
+      &-btn {
+        a {
+          font-size: 17px;
+        }
+        button {
+          width: 147px;
+          height: 29px;
+        }
+      }
+    }
+    &-header {
+      font-size: 40px;
+    }
+    &-consult {
+      button {
+        width: 290px;
+      }
+    }
+  }
+  .advantage {
+    &-header {
+      font-size: 29px;
+    }
+    &-icons {
+      &-item {
+        margin-right: 55px;
+        &:nth-child(1) {
+          width: 108%;
+        }
+        &-descr {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .consult {
+    &-header {
+      font-size: 33px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .promo {
+    &-nav {
+      a {
+        img {
+          width: 82%;
+        }
+      }
+      &-text {
+        margin-right: 30px;
+        font-size: 11px;
+        span {
+          font-size: 13px;
+        }
+      }
+      &-btn {
+        a {
+          font-size: 13px;
+        }
+        button {
+          width: 118px;
+          height: 24px;
+          font-size: 10px;
+        }
+      }
+    }
+    &-header {
+      font-size: 36px;
+      justify-content: center;
+    }
+    &-subheader {
+      font-size: 23px;
+      justify-content: center;
+    }
+    &-icons {
+      justify-content: center;
+      align-items: flex-start;
+      &-item {
+        &-text {
+          font-size: 12px;
+        }
+      }
+    }
+    &-consult {
+        justify-content: center;
+      button {
+        width: 262px;
+        height: 41px;
+        font-size: 15px;
+      }
+    }
+    &-catalog {
+      font-size: 14px;
+      a {
+        font-size: 15px;
+      }
+    }
+  }
+  .advantage {
+    &-header {
+      font-size: 29px;
+    }
+    &-icons {
+      &-item {
+        margin-right: 55px;
+        &:nth-child(1) {
+          width: 108%;
+        }
+        &-descr {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .consult {
+    &-header {
+      font-size: 33px;
+    }
+  }
+}
