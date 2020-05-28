@@ -244,4 +244,29 @@
     }
   }
 }
+.slider {
+  min-height: 744px;
+  padding: 82px 0;
+  &-wrapper {
+    display: block;
+    margin: 0 auto;
+    width: 750px;
+  }
+  button {
+    border: none;
+    background: $white;
+  }
+  .slick-prev {
+    position: absolute;
+    left: -67px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .slick-next {
+    position: absolute;
+    right: -67px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
 @import "_media";
