@@ -251,6 +251,11 @@
     display: block;
     margin: 0 auto;
     width: 750px;
+    &-item {
+      img {
+        margin: 0 auto;
+      }
+    }
   }
   button {
     border: none;
@@ -267,6 +272,27 @@
     right: -67px;
     top: 50%;
     transform: translateY(-50%);
+  }
+  .slick-dots {
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    li {
+      margin-right: 45px;
+    }
+    button {
+      border: 3px $red solid;
+      background: #fff;
+      border-radius: 100%;
+      outline: none;
+      font-size: 4px;
+      color: #fff;
+      transition: all 0.9s;
+      &:active {
+        border: 1px;
+      }
+    }
   }
 }
 @import "_media";

@@ -68,6 +68,19 @@
     }
   }
 }
+@media (max-width: 808px) {
+  .slider {
+    min-height: 410px;
+    &-wrapper {
+      width: 90%;
+      &-item {
+        img {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
 @media (max-width: 768px) {
   .promo {
     height: 635px;
@@ -291,5 +304,19 @@
         width: 274px;
       }
     }
+  }
+  .slider {
+    min-height: 340px;
+    &-wrapper {
+      width: 88%;
+      &-item {
+        img {
+          width: 88%;
+        }
+      }
+    }
+  }
+  .container {
+    width: 95%;
   }
 }
