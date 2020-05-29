@@ -44,6 +44,7 @@ gulp.task("sass", () => {
 gulp.task("watch", () => {
   gulp.watch("src/sass/**/*.+(scss|sass)", gulp.parallel("sass"));
   gulp.watch("src/index.html").on("change", browserSync.reload);
+  gulp.watch("src/js/**/*.js").on("change", browserSync.reload);
 });
 /**
  * TASK DEF

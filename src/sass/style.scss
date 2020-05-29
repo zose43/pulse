@@ -244,6 +244,7 @@
     }
   }
 }
+/* Slider */
 .slider {
   min-height: 744px;
   padding: 82px 0;
@@ -293,6 +294,104 @@
         border: 1px;
       }
     }
+  }
+  /* Tiny-slider */
+  // div {
+  //   position: relative;
+  //   width: 750px;
+  // }
+  // &-tiny {
+  //   &-item {
+  //     img {
+  //       display: block;
+  //       margin: 0 auto;
+  //     }
+  //   }
+  // }
+  // &-prev {
+  //   position: absolute;
+  //   left: -67px;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  // }
+  // &-next {
+  //   position: absolute;
+  //   right: -67px;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  // }
+  /* dot */
+  // .tns-nav {
+  //   display: flex;
+  //   justify-content: center;
+  //   margin-top: 15px;
+  //   button {
+  //     width: 27px;
+  //     height: 24px;
+  //     margin-right: 25px;
+  //     border-radius: 100%;
+  //     border: 1px whitesmoke solid;
+  //     background: $red;
+  //     outline: none;
+  //   }
+  //   .tns-nav-active {
+  //     background: pink;
+  //   }
+  // }
+  /* Tiny-slider */
+}
+.catalog {
+  padding-bottom: 103px;
+  &-header {
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $header;
+  }
+  &-tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 69px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    &-tab {
+      width: 220px;
+      height: 50px;
+      border: 2px solid #d0d0d0;
+      font-size: 18px;
+      line-height: 48px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #6b6b6b;
+      text-align: center;
+      cursor: pointer;
+      transform: skewX(-30deg);
+      transition: all 0.7s;
+      &:hover {
+        box-shadow: 2px 2px 15px #6b6b6b;
+      }
+      &:nth-child(2) {
+        margin: 0 10px;
+      }
+      div {
+        transform: skewX(30deg);
+      }
+    }
+    .active {
+      border: none;
+      background: $red;
+      color: $white;
+      transition: all 0.7s;
+      &:hover {
+        box-shadow: 2px 2px 15px $red;
+      }
+    }
+  }
+  &-content {
+    margin-top: 59px;
   }
 }
 @import "_media";

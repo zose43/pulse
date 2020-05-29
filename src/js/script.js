@@ -16,3 +16,19 @@ $(document).ready(function () {
     ],
   });
 });
+/* tiny-slider */
+// const slider = tns({
+//   container: ".slider-tiny",
+//   items: 1,
+//   autoplay: false,
+//   controls: false,
+//   nav: false,
+//   navPosition: "bottom",
+// });
+/* events for buttons */
+// document.querySelector(".slider-next").addEventListener("click", () => {
+//   slider.goTo("next");
+// });
+// document.querySelector(".slider-prev").addEventListener("click", () => {
+//   slider.goTo("prev");
+// });
