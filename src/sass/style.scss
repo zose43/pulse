@@ -356,7 +356,7 @@
     margin-top: 69px;
     list-style: none;
     padding: 0;
-    margin-bottom: 0;
+    margin-bottom: 59px;
     &-tab {
       width: 220px;
       height: 50px;
@@ -391,7 +391,156 @@
     }
   }
   &-content {
-    margin-top: 59px;
+    display: flex;
+    justify-content: center;
+    &-item {
+      padding: 20px 19px 27px 20px;
+      width: 300px;
+      min-height: 440px;
+      border: 2px solid #e8e8e8;
+      &:nth-child(2) {
+        margin: 0 20px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      h2 {
+        margin: 0;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: $header;
+      }
+      &-descr {
+        margin-top: 16px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.2;
+        font-weight: 300;
+        color: $header;
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        margin-top: 17px;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 500;
+        text-decoration: underline;
+        color: $red;
+      }
+      hr {
+        margin: 0;
+        margin-top: 19px;
+      }
+      &-footer {
+        margin-top: 22px;
+        display: flex;
+        justify-content: space-between;
+        button {
+          width: 131px;
+          height: 40px;
+          background-color: $red;
+          border-radius: 5px;
+          border: none;
+          outline: none;
+          font-size: 14px;
+          line-height: 1.2;
+          font-weight: 500;
+          text-transform: uppercase;
+          color: $white;
+        }
+        &-price {
+          &-up {
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 300;
+            color: #555555;
+            text-decoration: line-through;
+          }
+          &-down {
+            margin-top: 9px;
+            font-size: 20px;
+            line-height: 1.2;
+            font-weight: 700;
+            color: $header;
+          }
+        }
+      }
+      &-more {
+        padding: 18px 19px 27px 20px;
+        width: 300px;
+        min-height: 440px;
+        border: 2px solid #e8e8e8;
+        ul {
+          margin: 0;
+          padding-left: 8px;
+          font-family: MuseoSansCyrl;
+          font-size: 14px;
+          line-height: 1.2;
+          font-weight: 300;
+          color: #555555;
+          list-style: square;
+        }
+        li {
+          margin-top: 21px;
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+        }
+        a {
+          display: flex;
+          justify-content: center;
+          margin-top: 84px;
+          font-size: 14px;
+          line-height: 1.2;
+          font-weight: 500;
+          text-decoration: underline;
+          color: $red;
+        }
+        &-footer {
+          margin-top: 22px;
+          display: flex;
+          justify-content: space-between;
+          button {
+            width: 131px;
+            height: 40px;
+            background-color: $red;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $white;
+          }
+          &-price {
+            &-up {
+              font-size: 14px;
+              line-height: 1.2;
+              font-weight: 300;
+              color: #555555;
+              text-decoration: line-through;
+            }
+            &-down {
+              margin-top: 9px;
+              font-size: 20px;
+              line-height: 1.2;
+              font-weight: 700;
+              color: $header;
+            }
+          }
+        }
+        hr {
+          margin: 0;
+          margin-top: 19px;
+        }
+      }
+    }
   }
 }
 @import "_media";
