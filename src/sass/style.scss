@@ -67,6 +67,7 @@
     }
   }
   &-header {
+    margin: 0 auto;
     display: flex;
     justify-content: flex-end;
     margin-top: 91px;
@@ -77,6 +78,7 @@
     color: $white;
   }
   &-subheader {
+    margin: 0 auto;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -144,6 +146,7 @@
   background: $bg;
   padding: 69px 0 81px 0;
   &-header {
+    margin: 0 auto;
     text-align: center;
     font-size: 30px;
     font-weight: 700;
@@ -166,6 +169,7 @@
         width: 70%;
       }
       &-header {
+        margin: 0 auto;
         margin-top: 38px;
         font-size: 18px;
         font-weight: 700;
@@ -193,6 +197,7 @@
   background: url(../img/consult_bg.jpg) center (center/cover) no-repeat;
   padding: 103px 0 92px 0;
   &-header {
+    margin: 0 auto;
     text-align: left;
     font-size: 36px;
     font-weight: 700;
@@ -343,6 +348,7 @@
 .catalog {
   padding-bottom: 103px;
   &-header {
+    margin: 0 auto;
     text-align: center;
     font-size: 30px;
     line-height: 1.2;
@@ -356,7 +362,7 @@
     margin-top: 69px;
     list-style: none;
     padding: 0;
-    margin-bottom: 59px;
+    margin-bottom: 39px;
     &-tab {
       width: 220px;
       height: 50px;
@@ -393,6 +399,7 @@
   &-content {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
     &-item {
       padding: 20px 19px 27px 20px;
       width: 300px;
@@ -401,45 +408,52 @@
       &:nth-child(2) {
         margin: 0 20px;
       }
-      img {
-        display: block;
-        margin: 0 auto;
+      .prodWrapper {
+        img {
+          display: block;
+          margin: 0 auto;
+          max-width: 100%;
+          height: 200px;
+        }
+        h2 {
+          margin: 0;
+          margin-top: 20px;
+          text-align: center;
+          font-size: 16px;
+          line-height: 1.2;
+          font-weight: 700;
+          color: $header;
+        }
+        &-descr {
+          margin: 0 auto;
+          margin-top: 16px;
+          font-size: 14px;
+          text-align: center;
+          line-height: 1.2;
+          font-weight: 300;
+          color: $header;
+        }
+        a {
+          display: block;
+          text-align: center;
+          margin-top: 17px;
+          font-size: 14px;
+          line-height: 1.2;
+          font-weight: 500;
+          text-decoration: underline;
+          color: $red;
+        }
+        hr {
+          margin: 0;
+          margin-top: 19px;
+        }
       }
-      h2 {
-        margin: 0;
-        margin-top: 20px;
-        text-align: center;
-        font-size: 16px;
-        line-height: 1.2;
-        font-weight: 700;
-        color: $header;
-      }
-      &-descr {
-        margin-top: 16px;
-        font-size: 14px;
-        text-align: center;
-        line-height: 1.2;
-        font-weight: 300;
-        color: $header;
-      }
-      a {
-        display: flex;
-        justify-content: center;
-        margin-top: 17px;
-        font-size: 14px;
-        line-height: 1.2;
-        font-weight: 500;
-        text-decoration: underline;
-        color: $red;
-      }
-      hr {
-        margin: 0;
-        margin-top: 19px;
-      }
+
       &-footer {
         margin-top: 22px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         button {
           width: 131px;
           height: 40px;
@@ -471,10 +485,6 @@
         }
       }
       &-more {
-        padding: 18px 19px 27px 20px;
-        width: 300px;
-        min-height: 440px;
-        border: 2px solid #e8e8e8;
         ul {
           margin: 0;
           padding-left: 8px;
@@ -492,8 +502,8 @@
           }
         }
         a {
-          display: flex;
-          justify-content: center;
+          display: block;
+          text-align: center;
           margin-top: 84px;
           font-size: 14px;
           line-height: 1.2;
@@ -501,43 +511,57 @@
           text-decoration: underline;
           color: $red;
         }
-        &-footer {
-          margin-top: 22px;
-          display: flex;
-          justify-content: space-between;
-          button {
-            width: 131px;
-            height: 40px;
-            background-color: $red;
-            border-radius: 5px;
-            border: none;
-            outline: none;
-            font-size: 14px;
-            line-height: 1.2;
-            font-weight: 500;
-            text-transform: uppercase;
-            color: $white;
-          }
-          &-price {
-            &-up {
-              font-size: 14px;
-              line-height: 1.2;
-              font-weight: 300;
-              color: #555555;
-              text-decoration: line-through;
-            }
-            &-down {
-              margin-top: 9px;
-              font-size: 20px;
-              line-height: 1.2;
-              font-weight: 700;
-              color: $header;
-            }
-          }
-        }
         hr {
           margin: 0;
           margin-top: 19px;
+        }
+      }
+    }
+  }
+}
+/* Review */
+.review {
+  padding-bottom: 71px;
+  &-header {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $header;
+  }
+  &-wrapper {
+    &-item {
+      margin-top: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      &-img {
+        padding-right: 62px;
+      }
+      &-main {
+        h3 {
+          margin: 0 auto;
+          font-size: 18px;
+          line-height: 1.2;
+          font-weight: 700;
+          color: $header;
+        }
+        &-subheader {
+          margin-top: 10px;
+          font-size: 14px;
+          line-height: 1.2;
+          font-weight: 300;
+          color: #646464;
+        }
+        &-descr {
+          margin-top: 19px;
+          width: 652px;
+          font-size: 16px;
+          line-height: 1.2;
+          font-weight: 300;
+          color: $header;
         }
       }
     }
