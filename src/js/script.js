@@ -15,39 +15,47 @@ $(document).ready(function () {
       },
     ],
   });
-});
-/* tiny-slider */
-// const slider = tns({
-//   container: ".slider-tiny",
-//   items: 1,
-//   autoplay: false,
-//   controls: false,
-//   nav: false,
-//   navPosition: "bottom",
-// });
-/* events for buttons */
-// document.querySelector(".slider-next").addEventListener("click", () => {
-//   slider.goTo("next");
-// });
-// document.querySelector(".slider-prev").addEventListener("click", () => {
-//   slider.goTo("prev");
-// });
-/* catalog button event */
-window.addEventListener("DOMContentLoaded", () => {
-  const moreLink = document.querySelector(".catalog-link");
-  const backLink = document.querySelector(".back");
-  const prodWrapper = document.querySelector(".catalog-content-item-prodWrapper");
-  const more = document.querySelector(".catalog-content-item-more");
-  const item = document.querySelector(".catalog-content-item");
-
-  moreLink.addEventListener("click", (e) => {
-    e.preventDefault();
-    item.classList.remove(prodWrapper);
-    item.classList.add(more);
+  /* tiny-slider */
+  // const slider = tns({
+  //   container: ".slider-tiny",
+  //   items: 1,
+  //   autoplay: false,
+  //   controls: false,
+  //   nav: false,
+  //   navPosition: "bottom",
+  // });
+  /* events for buttons */
+  // document.querySelector(".slider-next").addEventListener("click", () => {
+  //   slider.goTo("next");
+  // });
+  // document.querySelector(".slider-prev").addEventListener("click", () => {
+  //   slider.goTo("prev");
+  // });
+  /* catalog tabs event */
+  /**
+   * search active tabs, after search active catalog
+   */
+  $(".catalog-tabs").on("click", "li:not('.active')", function () {
+    $(this)
+      .addClass("active")
+      .siblings()
+      .removeClass("active")
+      .closest(".container")
+      .find(".catalog-content")
+      .removeClass("catalog-content-active")
+      .eq($(this).index())
+      .addClass("catalog-content-active");
   });
-  backLink.addEventListener("click", (e) => {
-    e.preventDefault();
-    item.classList.remove(more);
-    item.classList.add(prodWrapper);
-  });
+  /* event link more detalis */
+  function toggleClass(item) {
+    $(item).each(function (i) {
+      $(this).on("click", function (e) {
+        e.preventDefault();
+        $(".more").eq(i).toggleClass("more-active");
+        $(".prodWrapper").eq(i).toggleClass("prodWrapper-active");
+      });
+    });
+  }
+  toggleClass(".back");
+  toggleClass(".catalog-link");
 });

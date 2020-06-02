@@ -12,7 +12,32 @@
       }
     }
   }
+  .catalog {
+    padding-bottom: 83px;
+    &-tabs {
+      margin-top: 60px;
+    }
+    &-content {
+      &-item {
+        margin: 0 13px;
+        margin-top: 15px;
+        &:nth-child(2) {
+          margin: 0 13px;
+          margin-top: 15px;
+        }
+        &:nth-child(5) {
+          margin: 0 13px;
+          margin-top: 15px;
+        }
+        .change {
+          .more {
+          }
+        }
+      }
+    }
+  }
 }
+
 @media (max-width: 992px) {
   .promo {
     &-nav {
