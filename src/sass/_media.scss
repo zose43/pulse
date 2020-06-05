@@ -1,3 +1,26 @@
+@media (max-width: 1429px) {
+  .catalog {
+    &-content {
+      &-item {
+        &:nth-child(3n) {
+          .change {
+            transform: translateX(-23%);
+            .prodWrapper {
+              &-active {
+                transform: translateX(46%);
+              }
+            }
+            .more {
+              &-active {
+                transform: translateX(-54%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 1200px) {
   .advantage {
     &-icons {
@@ -25,6 +48,11 @@
         &:nth-child(2) {
           margin: 0 13px;
           margin-top: 15px;
+        }
+        &:nth-child(3n) {
+          .change {
+            transform: translateX(-15%);
+          }
         }
         &:nth-child(5) {
           margin: 0 13px;
@@ -70,7 +98,6 @@
     }
   }
 }
-
 @media (max-width: 992px) {
   .promo {
     &-nav {
@@ -144,6 +171,11 @@
         &:nth-child(5) {
           margin: 0 13px;
           margin-top: 15px;
+        }
+        &:nth-child(3n) {
+          .change {
+            transform: translateX(-13%);
+          }
         }
         .change {
           width: 142%;
@@ -233,7 +265,7 @@
     }
   }
 }
-@media (max-width: 808px) {
+@media (max-width: 827px) {
   .slider {
     min-height: 410px;
     &-wrapper {
@@ -241,6 +273,27 @@
       &-item {
         img {
           width: 90%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 779px) {
+  .catalog {
+    &-content {
+      &-item {
+        .change {
+          transform: translateX(-8%);
+          .more {
+            &-active {
+              transform: translateX(-65%);
+            }
+          }
+          .prodWrapper {
+            &-active {
+              transform: translateX(35%);
+            }
+          }
         }
       }
     }
@@ -375,8 +428,14 @@
           margin: 0 13px;
           margin-top: 15px;
         }
+        &:nth-child(3n) {
+          .change {
+            transform: translateX(-17%);
+          }
+        }
         .change {
           width: 162%;
+          transform: translateX(0%);
           .more {
             width: 50%;
             a {
@@ -647,6 +706,11 @@
         &:nth-child(5) {
           margin: 0 13px;
           margin-top: 15px;
+        }
+        &:nth-child(3n) {
+          .change {
+            transform: translateX(-4%);
+          }
         }
         .change {
           width: 115%;
