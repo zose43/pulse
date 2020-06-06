@@ -157,6 +157,18 @@
     padding-bottom: 73px;
     &-tabs {
       margin-top: 50px;
+      &-tab {
+        transition: none;
+        &:hover {
+          box-shadow: none;
+        }
+      }
+      .active {
+        transition: none;
+        &:hover {
+          box-shadow: none;
+        }
+      }
     }
     &-content {
       &-item {
@@ -798,6 +810,30 @@
           &-descr {
             width: 100%;
             text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    &-info {
+      padding: 0 6px;
+      width: 72%;
+      address {
+        font-size: 17px;
+      }
+      &-tel {
+        a {
+          font-size: 17px;
+        }
+      }
+      &-icons {
+        .round {
+          margin-top: 30px;
+          margin-right: 22px;
+          transition: none;
+          &:hover {
+            box-shadow: none;
           }
         }
       }

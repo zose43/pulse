@@ -58,4 +58,27 @@ $(document).ready(function () {
   }
   toggleClass(".back");
   toggleClass(".catalog-link");
+  /* Modal */
+  openModal();
+  closeModal();
+  /**
+   * Open modal function
+   * to every event modal window
+   */
+  function openModal() {
+    $(".promo-bigBtn").on("click", function () {
+      $(".overlay").addClass("overlay-active");
+      $(".modal").addClass("modal-active");
+    });
+  }
+  /**
+   * Close modal function
+   * to every event modal window
+   */
+  function closeModal() {
+    $(".modal-close").on("click", function () {
+      $(".overlay").removeClass("overlay-active");
+      $(".modal").removeClass("modal-active");
+    });
+  }
 });

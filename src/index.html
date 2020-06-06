@@ -65,7 +65,7 @@
           </div>
         </div>
         <div class="promo-consult">
-          <button>заказать кОНСУЛЬТАЦИЮ</button>
+          <button class="promo-bigBtn">заказать кОНСУЛЬТАЦИЮ</button>
         </div>
         <div class="promo-catalog">
           или
@@ -680,7 +680,7 @@
         src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abeeed05a53f99b2cd1b859ce1eb37e88ffefb67893abf87ee068ff1e0b2812d3&amp;width=100%25&amp;height=630&amp;lang=ru_RU&amp;scroll=false"
       ></script>
       <div class="footer-info">
-        <div class="footer-info-address">Москва, Мясницкий проезд, д.3с1</div>
+        <address>Москва, Мясницкий проезд, д.3с1</address>
         <div class="footer-info-tel">
           <a href="tel:84999228974">8 (499) 922-89-74</a>
         </div>
@@ -691,9 +691,46 @@
           <div class="round">
             <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
+          <div class="round">
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
         </div>
       </div>
     </footer>
+    <!-- Modal -->
+    <div class="overlay">
+      <div class="modal">
+        <div class="modal-close">&times;</div>
+        <div class="modal-header">Просто заполните форму заявки</div>
+        <div class="modal-subheader">
+          и мы перезвоним вам в течении 10 минут
+        </div>
+        <form action="#">
+          <input
+            required
+            type="text"
+            name="name"
+            placeholder="Ваше имя"
+            id=""
+          />
+          <input
+            required
+            type="tel"
+            name="phone"
+            placeholder="Ваш телефон"
+            id=""
+          />
+          <input
+            required
+            type="email"
+            name="email"
+            placeholder="Ваш E-mail"
+            id=""
+          />
+          <input class="submit" type="submit" value="заказать кОНСУЛЬТАЦИЮ" />
+        </form>
+      </div>
+    </div>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
