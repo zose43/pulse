@@ -677,27 +677,32 @@
 /* Modal */
 .overlay {
   position: fixed;
+  display: none;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(#000000, 0.56);
-  visibility: hidden;
-  &-active {
-    visibility: visible;
-  }
-  .modal {
+  // visibility: hidden;
+  // &-active {
+  //   visibility: visible;
+  // }
+  .modalConsult {
     position: relative;
-    display: block;
-    margin: 0 auto;
-    margin-top: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // top: 270px;
+    top: 280px;
+    display: none;
+    // margin: 0 auto;
+    // margin-top: 80px;
     padding: 38px 0 40px 0;
     width: 380px;
-    height: 400px;
+    min-height: 400px;
     background-color: #f2f2f2;
-    visibility: hidden;
-    &-active {
-      visibility: visible;
-    }
+    // visibility: hidden;
+    // &-active {
+    //   visibility: visible;
+    // }
     &-close {
       position: absolute;
       text-align: center;
@@ -764,6 +769,144 @@
         text-transform: uppercase;
         color: $white;
       }
+    }
+  }
+  /* Modal-catalog */
+  .modalCatalog {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // top: -130px;
+    display: none;
+    top: 280px;
+    // margin: 0 auto;
+    // margin-top: 80px;
+    padding: 38px 0 40px 0;
+    width: 380px;
+    min-height: 400px;
+    background-color: #f2f2f2;
+    // visibility: hidden;
+    // &-active {
+    //    margin-top: -400px;
+    //   visibility: visible;
+    // }
+    &-close {
+      position: absolute;
+      text-align: center;
+      line-height: 15px;
+      font-size: 36px;
+      font-weight: 900;
+      right: -41px;
+      top: 0px;
+      width: 21px;
+      height: 21px;
+      color: $red;
+      cursor: pointer;
+      &:hover {
+        font-size: 41px;
+      }
+    }
+    &-header {
+      font-size: 19px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: $header;
+      text-align: center;
+    }
+    &-subheader {
+      margin-top: 11px;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 500;
+      color: $header;
+      text-align: center;
+    }
+    form {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      input {
+        width: 300px;
+        height: 50px;
+        padding: 0 24px;
+        background-color: $white;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        line-height: 66px;
+        font-weight: 300;
+        color: $input;
+        &:nth-child(2) {
+          margin: 15px 0;
+        }
+      }
+      .submit {
+        margin-top: 20px;
+        width: 300px;
+        height: 55px;
+        background-color: $red;
+        border-radius: 5px;
+        line-height: 1.2;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $white;
+      }
+    }
+  }
+  /* Modal-request */
+  .modalRequest {
+    position: relative;
+    display: none;
+    top: 280px;
+    // margin: 0 auto;
+    // margin-top: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // top: -600px;
+    padding: 38px 0 43px 0;
+    width: 380px;
+    min-height: 140px;
+    background-color: #f2f2f2;
+    // visibility: hidden;
+    // &-active {
+    //   margin-top: -880px;
+    //   visibility: visible;
+    // }
+    &-close {
+      position: absolute;
+      text-align: center;
+      line-height: 15px;
+      font-size: 36px;
+      font-weight: 900;
+      right: -41px;
+      top: 0px;
+      width: 21px;
+      height: 21px;
+      color: $red;
+      cursor: pointer;
+      &:hover {
+        font-size: 41px;
+      }
+    }
+    &-header {
+      font-size: 19px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: $header;
+      text-align: center;
+    }
+    &-subheader {
+      margin-top: 11px;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 500;
+      color: $header;
+      text-align: center;
     }
   }
 }

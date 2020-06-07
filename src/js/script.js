@@ -59,26 +59,43 @@ $(document).ready(function () {
   toggleClass(".back");
   toggleClass(".catalog-link");
   /* Modal */
-  openModal();
-  closeModal();
+  //consult
+  openModal("promo-bigBtn", "modalConsult");
+  openModal("promo-smallBtn", "modalConsult");
+  closeModal("modalConsult");
+  //buy
+  openModal("buyBtn", "modalCatalog");
+  closeModal("modalCatalog");
+  /* script to modal-subheader */
+  $(".buyBtn").each(function (i) {
+    $(this).on("click", function () {
+      $(".modalCatalog .modalCatalog-subheader").text(
+        $(".prodWrapper h2").eq(i).text()
+      );
+    });
+  });
+  //request
+  openModal("submit", "modalRequest");
+  closeModal("modalRequest");
   /**
    * Open modal function
    * to every event modal window
    */
-  function openModal() {
-    $(".promo-bigBtn").on("click", function () {
-      $(".overlay").addClass("overlay-active");
-      $(".modal").addClass("modal-active");
+
+  function openModal(btnClass, modalClass) {
+    $(`.${btnClass}`).on("click", function () {
+      $(".overlay").fadeIn("3s");
+      $(`.${modalClass}`).fadeIn("3s");
     });
   }
   /**
    * Close modal function
    * to every event modal window
    */
-  function closeModal() {
-    $(".modal-close").on("click", function () {
-      $(".overlay").removeClass("overlay-active");
-      $(".modal").removeClass("modal-active");
+  function closeModal(modalClass) {
+    $(`.${modalClass}-close`).on("click", function () {
+      $(".overlay").fadeOut("3s");
+      $(`.${modalClass}`).fadeOut("3s");
     });
   }
 });
