@@ -224,7 +224,7 @@
       background-color: $white;
       border-radius: 5px;
       border: none;
-      outline: none;
+      // outline: none;
       font-size: 14px;
       line-height: 66px;
       font-weight: 300;
@@ -233,6 +233,15 @@
         margin: 15px 0;
       }
     }
+    label.error {
+      border: none;
+    }
+    .error {
+      border: 1px solid $red;
+    }
+    // .valid{
+    //   margin-bottom: 5px;
+    // }
     .submit {
       margin-top: 20px;
       width: 300px;
@@ -247,6 +256,20 @@
       text-transform: uppercase;
       color: $white;
     }
+  }
+  #phone-error {
+    color: $white;
+    margin: 7px 0;
+    text-align: center;
+  }
+  #name-error {
+    color: $white;
+    margin: 7px 0;
+  }
+  #email-error {
+    color: $white;
+    margin: 0;
+    margin-top: 7px;
   }
 }
 /* Slider */
@@ -746,7 +769,7 @@
         background-color: $white;
         border-radius: 5px;
         border: none;
-        outline: none;
+        // outline: none;
         font-size: 14px;
         line-height: 66px;
         font-weight: 300;
@@ -754,6 +777,12 @@
         &:nth-child(2) {
           margin: 15px 0;
         }
+      }
+      label.error {
+        border: none;
+      }
+      .error {
+        border: 1px solid $red;
       }
       .submit {
         margin-top: 20px;
@@ -832,7 +861,7 @@
         padding: 0 24px;
         background-color: $white;
         border-radius: 5px;
-        border: none;
+        // border: none;
         outline: none;
         font-size: 14px;
         line-height: 66px;
@@ -841,6 +870,12 @@
         &:nth-child(2) {
           margin: 15px 0;
         }
+      }
+      label.error {
+        border: none;
+      }
+      .error {
+        border: 1px solid $red;
       }
       .submit {
         margin-top: 20px;
@@ -909,5 +944,18 @@
       text-align: center;
     }
   }
+}
+#phone-error {
+  color: $red;
+  margin: 7px 0;
+}
+#name-error {
+  color: $red;
+  margin: 7px 0;
+}
+#email-error {
+  color: $red;
+  margin: 0;
+  margin-top: 7px;
 }
 @import "_media";

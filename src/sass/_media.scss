@@ -839,4 +839,99 @@
       }
     }
   }
+  .overlay {
+    .modalConsult {
+      &-close {
+        font-size: 40px;
+        line-height: 19px;
+        top: 5px;
+        right: 5px;
+        &:hover {
+          font-size: 40px;
+        }
+      }
+    }
+    .modalCatalog {
+      &-close {
+        font-size: 40px;
+        line-height: 19px;
+        top: 5px;
+        right: 5px;
+        &:hover {
+          font-size: 40px;
+        }
+      }
+    }
+    .modalRequest {
+      top: 240px;
+      &-close {
+        font-size: 40px;
+        line-height: 19px;
+        top: 5px;
+        right: 5px;
+        &:hover {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 410px) {
+  .overlay {
+    .modalConsult {
+      width: 330px;
+      &-close {
+        font-size: 40px;
+        line-height: 23px;
+        font-weight: 400;
+        width: 26px;
+        height: 26px;
+        top: 13px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid $red;
+        border-radius: 7px;
+        &:hover {
+          font-size: 40px;
+        }
+      }
+    }
+    .modalCatalog {
+      width: 330px;
+      &-close {
+        font-size: 40px;
+        line-height: 23px;
+        font-weight: 400;
+        width: 26px;
+        height: 26px;
+        top: 13px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid $red;
+        border-radius: 7px;
+        &:hover {
+          font-size: 40px;
+        }
+      }
+    }
+    .modalRequest {
+      top: 240px;
+      width: 330px;
+      &-close {
+        font-size: 40px;
+        line-height: 23px;
+        font-weight: 400;
+        width: 26px;
+        height: 26px;
+        top: 13px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid $red;
+        border-radius: 7px;
+        &:hover {
+          font-size: 40px;
+        }
+      }
+    }
+  }
 }

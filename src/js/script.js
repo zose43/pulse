@@ -98,4 +98,33 @@ $(document).ready(function () {
       $(`.${modalClass}`).fadeOut("3s");
     });
   }
+  /* Form validatator */
+  formValidator("#modalConsult .form");
+  formValidator("#modalCatalog .form");
+  formValidator(".form");
+  /* func validate */
+  function formValidator(form) {
+    $(form).validate({
+      rules: {
+        name: {
+          required: true,
+        },
+        email: {
+          required: true,
+          email: true,
+        },
+        phone: {
+          required: true,
+        },
+      },
+      messages: {
+        name: "Введите ваше имя",
+        phone: "Введите ваш номер телефона",
+        email: {
+          required: "Введите вашу почту",
+          email: "Введите вашу почту в правильном формате",
+        },
+      },
+    });
+  }
 });

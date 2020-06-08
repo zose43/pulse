@@ -118,28 +118,10 @@
           Просто заполните форму заявки<br />
           и мы перезвоним вам в течении 10 минут
         </div>
-        <form action="#">
-          <input
-            required
-            type="text"
-            name="name"
-            placeholder="Ваше имя"
-            id=""
-          />
-          <input
-            required
-            type="tel"
-            name="phone"
-            placeholder="Ваш телефон"
-            id=""
-          />
-          <input
-            required
-            type="email"
-            name="email"
-            placeholder="Ваш E-mail"
-            id=""
-          />
+        <form class="form" action="#">
+          <input type="text" name="name" placeholder="Ваше имя" id="" />
+          <input type="tel" name="phone" placeholder="Ваш телефон" id="" />
+          <input type="email" name="email" placeholder="Ваш E-mail" id="" />
           <input class="submit" type="submit" value="заказать кОНСУЛЬТАЦИЮ" />
         </form>
       </div>
@@ -700,13 +682,13 @@
     <!-- Modal -->
     <div class="overlay">
       <!-- Modal- consult -->
-      <div class="modalConsult">
+      <div class="modalConsult" id="modalConsult">
         <div class="modalConsult-close">&times;</div>
         <div class="modalConsult-header">Просто заполните форму заявки</div>
         <div class="modalConsult-subheader">
           и мы перезвоним вам в течении 10 минут
         </div>
-        <form action="#">
+        <form class="form" action="#">
           <input
             required
             type="text"
@@ -732,13 +714,13 @@
         </form>
       </div>
       <!-- Modal-catalog -->
-      <div class="modalCatalog">
+      <div class="modalCatalog" id="modalCatalog">
         <div class="modalCatalog-close">&times;</div>
         <div class="modalCatalog-header">Ваш заказ:</div>
         <div class="modalCatalog-subheader">
           и мы перезвоним вам в течении 10 минут
         </div>
-        <form action="#">
+        <form class="form" action="#">
           <input
             required
             type="text"
@@ -764,7 +746,7 @@
         </form>
       </div>
       <!-- Modal-request -->
-      <div class="modalRequest">
+      <div class="modalRequest" id="modalRequest">
         <div class="modalRequest-close">&times;</div>
         <div class="modalRequest-header">Спасибо за вашу заявку!</div>
         <div class="modalRequest-subheader">
@@ -783,6 +765,7 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
     <!-- tiny-slider -->
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
