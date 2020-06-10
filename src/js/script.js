@@ -75,7 +75,7 @@ $(document).ready(function () {
     });
   });
   //request
-  openModal("submit", "modalRequest");
+  // openModal("submit", "modalRequest");
   closeModal("modalRequest");
   /**
    * Open modal function
@@ -127,4 +127,21 @@ $(document).ready(function () {
       },
     });
   }
+  /* Masked input */
+  $("input[name=phone]").mask("+7 (999) 999-99-99");
+  /* off reset submit */
+  $("form").submit(function (e) {
+    e.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize(),
+    }).done(function () {
+      $(this).find("input").val("");
+      $("#modalConsult, #modalCatalog").fadeOut();
+      $("#modalRequest").fadeIn();
+      $("form").trigger("reset");
+    });
+    return false;
+  });
 });
