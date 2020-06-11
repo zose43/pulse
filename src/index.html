@@ -18,6 +18,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"
     /> -->
     <!-- tiny-slider -->
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
@@ -89,7 +90,11 @@
             </div>
           </div>
           <div class="advantage-icons-item">
-            <img src="icons/advantage/advantage_icons2.png" alt="heart" />
+            <img
+              src="icons/advantage/advantage_icons2.png"
+              class="heart"
+              alt="heart"
+            />
             <div class="advantage-icons-item-header">Заботимся о здоровье</div>
             <div class="advantage-icons-item-descr">
               Мы работаем для того, чтобы Ваши занятия спортом шли на пользу
@@ -585,7 +590,7 @@
       <div class="container">
         <h2 class="review-header">отзывы клиентов</h2>
         <div class="review-wrapper">
-          <div class="review-wrapper-item">
+          <div class="review-wrapper-item wow animate__fadeInUp">
             <div class="review-wrapper-item-img">
               <img src="icons/review/review_icon1.png" alt="client-woman" />
             </div>
@@ -606,7 +611,10 @@
               </div>
             </div>
           </div>
-          <div class="review-wrapper-item">
+          <div
+            class="review-wrapper-item wow animate__fadeInUp"
+            data-wow-delay="0.6s"
+          >
             <div class="review-wrapper-item-img">
               <img src="icons/review/review_icon2.png" alt="client-man" />
             </div>
@@ -626,7 +634,10 @@
               </div>
             </div>
           </div>
-          <div class="review-wrapper-item">
+          <div
+            class="review-wrapper-item wow animate__fadeInUp"
+            data-wow-delay="0.6s"
+          >
             <div class="review-wrapper-item-img">
               <img src="icons/review/review_icon3.png" alt="client-woman" />
             </div>
@@ -769,6 +780,7 @@
     <!-- tiny-slider -->
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

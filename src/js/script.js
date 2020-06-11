@@ -159,4 +159,16 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
     return false;
   });
+  /* wow script (scroll with block-animate) */
+  new WOW().init();
+  const wow = new WOW({
+    boxClass: "wow",
+    animateClass: "animate__animated",
+    offset: 0,
+    mobile: true,
+    live: true,
+    callback: function (box) {},
+    scrollContainer: null,
+  });
+  wow.init();
 });
