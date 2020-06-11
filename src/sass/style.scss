@@ -945,6 +945,18 @@
     }
   }
 }
+/* Smooth scroll */
+.scroll {
+  display: none;
+  position: absolute;
+  i {
+    position: fixed;
+    top: 600px;
+    right: 15px;
+    color: $red;
+    font-size: 35px;
+  }
+}
 #phone-error {
   color: $red;
   margin: 7px 0;
